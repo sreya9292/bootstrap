@@ -12,6 +12,20 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <style type="text/css">	
+	#radioSex
+	{
+		padding: 0px 0px 0px 0px;
+		margin: 0px 0px 0px -33px;
+	}
+	.radio-inline {
+    position: relative;
+    display: inline-block;
+    padding-left: 9px;
+    margin-bottom: 0;
+    font-weight: 400;
+    vertical-align: middle;
+    cursor: pointer;
+}
 </style>
 <body>
 	<div class="container">
@@ -27,11 +41,11 @@
 						<label for="dob" class="control-label ">Date of Birth</label>
 						<input type="date" class="form-control" >
 					</div>
-					<div class="form-group radio">
-						<label for="sex" class="control-label ">Sex</label>
+					<div class="form-group radio" id="radioSex">
+						<label for="sex" class="control-label "><b>Sex</b></label>
 					</div>
 						<label class="radio-inline">
-						<input type="radio"name="gender" value="male">Male
+						<input type="radio" name="gender" value="male" >Male
 					</label>
 					<label class="radio-inline">
 						<input type="radio"  name="gender" value="female">Female
