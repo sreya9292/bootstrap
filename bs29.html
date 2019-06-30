@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style type="text/css">
+.sep >li+li:before
+{
+	content: "|";
+}
+
+.breadcrumb >.active
+{
+	color:red;
+}
+</style>
+<body>
+	<br>
+	<ol class="breadcrumb">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Contact</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Products</a></li>
+	</ol>
+	<br>
+	<ol class="breadcrumb sep">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Contact</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Products</a></li>
+	</ol>
+	<br>
+	<ol class="breadcrumb" style="background-color: yellow;">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Contact</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Products</a></li>
+	</ol>
+	<br>
+	<ol class="breadcrumb">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Contact</a></li>
+		<li class="active"><a href="#" style="color:red">About</a></li>
+		<li><a href="#">Products</a></li>
+	</ol>
+ 	            
+</body>
+</html>

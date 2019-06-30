@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#btnSubmit').click(function(){
+				$('#myAlert').show('fade');
+				$('#myAlert1').show('fade');
+				$('#myAlert2').show('fade');
+				$('#myAlert3').show('fade');
+				
+
+			});
+			});
+			</script>
+<style type="text/css">
+
+	
+</style>
+<body>
+	<br>
+	<div class="container">
+		 <div class="row">
+		 	<div class="col-xs-6">
+		 		<br><br>
+		 		<button class="btn btn-primary" id="btnSubmit">Submit</button>
+		 		<br><br>
+		 		<div id="myAlert" class="alert alert-danger collapse">
+		 			<a href="#" class="close" data-dismiss="alert" >&times;</a>
+		 			<strong>Error!</strong>There is problem submitting your form
+			 </div>
+			 <div id="myAlert1" class="alert alert-info collapse">
+		 			<a href="#" class="close" data-dismiss="alert" >&times;</a>
+		 			<strong>Error!</strong>There is problem submitting your form
+			 </div>
+			 <div id="myAlert2" class="alert alert-warning collapse">
+		 			<a href="#" class="close" data-dismiss="alert" >&times;</a>
+		 			<strong>Error!</strong>There is problem submitting your form
+			 </div>
+			 <div id="myAlert3" class="alert alert-success collapse">
+		 			<a href="#" class="close" data-dismiss="alert" >&times;</a>
+		 			<strong>Error!</strong>There is problem submitting your form
+			 </div>
+	    </div>
+	</div>		  
+</body>
+</html>

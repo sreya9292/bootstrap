@@ -1,0 +1,90 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style type="text/css"></style>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#toggleButton').click(function(){
+				$('#imageGallery').collapse('toggle');
+				} );
+			$('#hideButton').click(function(){
+				$('#imageGallery').collapse('hide');
+				} );
+			$('#showButton').click(function(){
+				$('#imageGallery').collapse('show');
+				} );
+			$('#imageGallery').on('show.bs.collapse', function(){
+				alert('image gallery is about to be expanded');
+
+			});
+			$('#imageGallery').on('shown.bs.collapse', function(){
+				alert('image gallery is  expanded');
+
+			});
+			$('#imageGallery').on('hide.bs.collapse', function(){
+				alert('image gallery is about to hide');
+
+			});
+			$('#imageGallery').on('hidden.bs.collapse', function(){
+				alert('image gallery is hidden');
+
+			});
+
+
+		});
+	</script>
+
+	
+
+<body>
+	<br>
+	<div class="container">
+		 <div class="row">
+		 	<div class="panel panel-default">
+		 		<div class="panel-heading">
+		 			<button class="btn btn-primary" id="toggleButton">
+		 				Toggle Image Gallery
+		 			</button>
+		 			<button class="btn btn-primary" id="hideButton">
+		 				Hide Image Gallery
+		 			</button>
+		 			<button class="btn btn-primary" id="showButton">
+		 				Show Image Gallery
+		 			</button>	
+		 		</div>
+		 		<div class="panel-body collapse " id="imageGallery">
+		 			<div class="col-xs-4">
+		 		<a href="rose.jpg" class="thumbnail">
+		 			<p>rose</p>
+		 			<img src="rose.jpg">
+		 		</a>
+			 </div>
+			 <div class="col-xs-4">
+		 		<a href="lily.jpg" class="thumbnail">
+		 			<p>Lily</p>
+		 			<img src="lily.jpg">
+		 		</a>
+			 </div>
+			 <div class="col-xs-4">
+		 		<a href="roses.jpg" class="thumbnail">
+		 			<p>roses</p>
+		 			<img src="roses.jpg">
+		 		</a>
+			 </div>
+		 	</div>
+		 	</div>
+		 	
+	    </div>
+	</div>		  
+</body>
+</html>

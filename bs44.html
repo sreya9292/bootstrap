@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#txtName').tooltip();
+			$('#txtName').tooltip({
+				trigger:'click'
+			});
+			});
+	</script>
+<style type="text/css">	
+</style>
+<body>
+	<br>
+	<div class="container">
+		 <div class="row">
+		 	<div class="col-xs-6">
+		 		<br>
+		 		<br>
+		 		<label>Name: </label>
+		 		<input type="text" id="txtName" title="Bootstrap tooltip" data-toggle="tooltip">
+		 		<span class="glyphicon glyphicon-info-sign" id="infoIcon"></span>
+			 </div>
+	    </div>
+	</div>		  
+</body>
+</html>

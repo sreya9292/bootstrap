@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+	<style type="text/css">
+		body
+		{
+			position: relative;
+		}
+		.affix{
+			top:20px;
+		}
+		#mainNavbar
+		{
+			position: fixed;
+			top:20px;
+		}
+		#image
+		{
+			width:1500px;
+			height: 650px;
+		}
+		
+	</style>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-3">
+				<nav id="mainNavbar">
+					<ul class="nav nav-pills nav-stacked affix" data-offset-top="200 ">
+						<li class="active"><a href="#divDesert">Desert</a></li>
+						<li><a href="#divLighthouse">Lighthouse</a></li>
+						<li><a href="#divTulips">Tulips</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col-xs-9">
+				<div id="divDesert" class="divStyle">
+					<h1>Desert</h1>
+					<img src="desert.jpg" class="img-responsive" id="image">
+				</div>
+				<div id="divLighthouse" class="divStyle">
+					<h1>Lighthouse</h1>
+					<img src="lighthouse.jpg" class="img-responsive" id="image">
+				</div>
+				<div id="divTulips" class="divStyle">
+					<h1>Tulips</h1>
+					<img src="tulips.jpg" class="img-responsive" id="image">
+				</div>
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>
