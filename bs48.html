@@ -11,11 +11,22 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<script src="jquery-3.4.1.min.js"></script>
+
 <script type="text/javascript">
+	$(document).ready(function(){
+		$('body').scrollspy({
+			target:'#mainNavbar',
+			offset:10
+		});
+	});
+
 		
 </script>
 <style type="text/css">
+	.divStyle
+	{
+		padding-top: 40px;
+	}
 	#image
 	{
 		width: 700px;
@@ -26,7 +37,7 @@
 		position: relative;
 	}
 </style>
-<b10ody data-spy="scroll" data-target="#mainNavbar" data-offset="10">
+<body >
 	<nav id="mainNavbar" class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 		<div class="navbar-header">
@@ -38,10 +49,10 @@
 		</div>
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Home</a></li>
-				<li><a href="#">Contacts</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Products</a></li>
+				<li class="active"><a href="#divEagle">Home</a></li>
+				<li><a href="#divOwl">Contacts</a></li>
+				<li><a href="#divParrot">About</a></li>
+				<li><a href="#divDove">Products</a></li>
 
 			</ul>
 		</div>
@@ -65,10 +76,7 @@
 			<h1>Dove</h1>
 			<img src="dove.jpg" class="img-responsive" id="image">
 		</div>
-		<div class="divStyle" id="divPeacock">
-			<h1>Peacock</h1>
-			<img src="peacock.jpg" class="img-responsive" id="image">
-		</div>
+		
 	</div>
 
 
